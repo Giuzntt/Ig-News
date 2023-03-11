@@ -1,38 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IgNews - Rocket Seat
+Ignews: Curso RocketSeat com NextJs SSR, Static Props e Api de Pagamentos Stripe.
 
-## Getting Started
+Ignews é uma plataforma de notícias desenvolvida durante o curso da RocketSeat utilizando tecnologias como Next.js, Server-Side Rendering (SSR), Static Site Generation (SSG), Static Props e a API de Pagamentos do Stripe.
 
-First, run the development server:
+A plataforma oferece conteúdo exclusivo para assinantes, com notícias sobre o mundo da tecnologia e programação. Os usuários podem se cadastrar na plataforma e escolher o plano de assinatura que melhor se adequa às suas necessidades.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Com o uso de tecnologias como SSR e SSG, a plataforma oferece uma experiência de usuário rápida e otimizada para motores de busca. Além disso, a integração com a API de Pagamentos do Stripe garante a segurança e eficiência no gerenciamento de pagamentos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A plataforma Ignews é um ótimo exemplo de como a utilização de tecnologias modernas pode melhorar a experiência do usuário e oferecer soluções eficientes para gerenciamento de conteúdo e pagamentos online.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Server-Side Rendering (SSR)
+Server-Side Rendering é uma técnica que permite renderizar o conteúdo de uma página no servidor antes de enviá-la ao navegador. Isso melhora a velocidade de carregamento e a experiência do usuário, já que ele recebe uma página já renderizada ao invés de esperar o processamento no lado do cliente.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Static Site Generation (SSG)
+Static Site Generation é uma técnica que permite pré-renderizar as páginas do site durante o build, gerando páginas estáticas que podem ser servidas diretamente do servidor. Isso melhora ainda mais a velocidade de carregamento das páginas e reduz o tempo necessário para carregar o conteúdo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Static Props
+Static Props é uma funcionalidade do Next.js que permite pré-renderizar dados durante o build da aplicação, gerando páginas estáticas com conteúdo dinâmico. Isso permite que as páginas sejam servidas rapidamente, sem a necessidade de consultar um banco de dados ou uma API para gerar o conteúdo.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+API de Pagamentos do Stripe
+A API de Pagamentos do Stripe é uma solução completa para gerenciar pagamentos online. Utilizada na plataforma Ignews, ela permite que os usuários assinem o serviço de notícias e que os pagamentos sejam gerenciados de forma segura e  eficiente.
