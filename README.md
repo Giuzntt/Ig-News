@@ -1,6 +1,15 @@
 # IgNews - Rocket Seat
 Ignews: Curso RocketSeat com NextJs SSR, Static Props e Api de Pagamentos Stripe.
 
+## Nesse projeto está sendo usado
+
+- JAMStack
+- FaunaDB
+- Stripe
+- Next.JS
+
+
+
 Ignews é uma plataforma de notícias desenvolvida durante o curso da RocketSeat utilizando tecnologias como Next.js, Server-Side Rendering (SSR), Static Site Generation (SSG), Static Props e a API de Pagamentos do Stripe.
 
 A plataforma oferece conteúdo exclusivo para assinantes, com notícias sobre o mundo da tecnologia e programação. Os usuários podem se cadastrar na plataforma e escolher o plano de assinatura que melhor se adequa às suas necessidades.
