@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# error: src refspec main does not match any
+# error: failed to push some refs to 'https://github.com/Giuzntt/Ignews-RocketSeat.git'
+
