@@ -15,7 +15,7 @@
     margin-left: 5rem;
     height: 5rem;
 
-    a {
+    span {
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
@@ -24,7 +24,7 @@
       color: var(--gray-300);
       transition: color 0.2s;
 
-      & + a {
+      & + span {
         margin-left: 2rem;
       }
 

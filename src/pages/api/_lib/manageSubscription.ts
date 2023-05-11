@@ -25,10 +25,8 @@ export async function saveSubscription(
     status: subscription.status,
     price_id: subscription.items.data[0].price.id,
   };
-  console.log("Passou aqui 1 ", createAction);
 
   if (createAction) {
-    console.log("Passou aqui 2 ", createAction);
     await fauna.query(
       q.Create(q.Collection("subscriptions"), {
         data: subscriptionData,

@@ -27,6 +27,40 @@ export const authOptions: AuthOptions = {
     // ...add more providers here
   ],
   callbacks: {
+    async session(session: any) {
+      try {
+        const userActiveSubscription = await fauna.query<string>(
+          q.Get(
+            q.Intersection([
+              q.Match(
+                q.Index("subscription_by_user_ref"),
+                q.Select(
+                  "ref",
+                  q.Get(
+                    q.Match(
+                      q.Index("user_by_email"),
+                      q.Casefold(session?.session?.user?.email ?? "")
+                    )
+                  )
+                )
+              ),
+              q.Match(q.Index("subscription_by_status"), "active"),
+            ])
+          )
+        );
+
+        return {
+          ...session,
+          activeSubscription: userActiveSubscription,
+        };
+      } catch {
+        return {
+          ...session,
+          activeSubscription: null,
+        };
+      }
+    },
+
     async signIn(params: SignInParams) {
       const { user, account, profile } = params;
 
